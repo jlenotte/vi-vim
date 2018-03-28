@@ -30,10 +30,13 @@
 <script src="js/main.js"></script>
 
 
+<div id="banner">
+    <h1>Vi / ViM Editors</h1>
+</div>
+
 <div id="container">
     <div id="containertitle" class="containerboxes">
-        <h1>Vi / ViM Editors</h1>
-        <p>
+        <p class="p4">
             Nec vox accusatoris ulla licet subditicii in his malorum quaerebatur acervis ut saltem specie
             tenus crimina
             praescriptis legum committerentur, quod aliquotiens fecere principes saevi: sed quicquid Caesaris
@@ -42,33 +45,96 @@
         </p>
     </div>
     <div id="containerintro" class="containerboxes">
-        <h1>Introduction</h1>
-        <p>
-            Nec vox accusatoris ulla licet subditicii in his malorum quaerebatur acervis ut saltem specie
-            tenus crimina
-            praescriptis legum committerentur, quod aliquotiens fecere principes saevi: sed quicquid Caesaris
-            implacabilitati sedisset,
-            id velut fas iusque perpensum confestim urgebatur impleri.
+        <h1 class="titles">Introduction</h1>
+        <p class="p4">
+            Vi est l’un des nombreux editeurs de texte compris au sein d’Unix, parmis eux ceux trouvent ed,
+            sed, ex qui sont des line editors ou “editeurs de ligne”. Vi est l’un des editeurs standard les
+            plus utiles dans Unix, meme si pour tout débutant Vi peut sembler extremement non intuitif et
+            compliqué d’utilisation. Vi est extremement puissant et permet de nombreuses manipulations de
+            texte très utiles et vous verrez qu’une fois familier avec Vi, tout semblera extremement pratique,
+            et vous verrez egalement que Vi est très bien conçu. Vi n’est pas un editeur tu type “What You See
+            Is What You Get” tel que Word, ou Writer, par exemple, si vous voulez formatter votre texte,
+            l’indenter, ou autre, vous devez ajouter des codes de formattage afin de changer l’apparence du
+            document. Vi supporte également des fonctions de formattage de texte basiques telles que le
+            wrapping automatique, l’indentation automatique après un retour à la ligne, etc etc.
+        </p>
+    </div>
+    <div id="containerunderthehood" class="containerboxes">
+        <h1 class="titles">Under The Hood</h1>
+        <p class="p4">
+            Vi est un outil très très vieux, qui date des années 70, là ou les claviers ressemblaient à ceci :
+
+            <img src="" alt="ADM-3 Keyboard">
+            Ce qui explique directement la manière dont Vi a été conçu.
+
+            Vi fonctionne de la manière suivante : lorsque vous ouvrez un fichier avec Vi, Vi ouvre une
+            copie de ce fichier en buffer dans la mémoire et non sur le disque. Quand vous enregistrez ce
+            fichier, le buffer écrase la version précedente et remplace par la version editée qui se
+            trouve dans le buffer.
+        </p>
+    </div>
+    <div id="containermodusoperandi" class="containerboxes">
+        <h1 class="titles">Modus Operandi</h1>
+        <p class="p4">
+            Le fonctionnement fondamental de Vi repose sur des “modes” d’edition, ces modes sont
+            principalement :
+
+            * Insert [ i ]
+            * Command [ esc ]
+
+            En arrivant dans Vi, nous commençons en mode command, ou ce que vous taperez sera interprété en
+            tant que commande.
+            En mode Insert (insertion), tout ce que vous tapez devient du texte dans votre fichier. Parfois,
+            il peut arriver que vous entrez ou quittez le mode d’insert accidentellement, et si vous avez un
+            doute, don’t panic, appuyez simplement sur ESC, ce qui vous renverra vers le mode command, d’ou
+            vous pourrez à nouveau réparer toute modification apportée accidentellement.
+        </p>
+    </div>
+    <div id="containeropening" class="containerboxes">
+        <h1 class="titles">Opening Files</h1>
+        <p class="p4">
+            La meilleure façon d’apprendre à utiliser Vi reste de le pratiquer et d’éditer avec. <br>
+
+            Pour lancer Vi, tapez donc “vi [nom de votre fichier]” dans un terminal.
+            Ou “vi [/chemin/vers/votrefichier]”
+
+            Des problèmes pour ouvrir un fichier?
+
+            Si lorsque vous invoquez Vi, l’un des messages suivants apparait :
+
+            [open mode] → Votre terminal est peut etre mal défini, verifier la variable d’env $TERM et
+            assignez lui quel terminal vous voulez utiliser par défaut.
+            [Visual needs addressable cursor or upline capability, Bad termcap entry, Termcap entry too long,
+            terminal: Unknown terminal type, Block device required, Not a typewriter] → votre type de terminal
+            est soit non défini, soit quelquechose n’est pas bon avec votre entrée terminfo ou termcap.
+            [new file] si vous pensez que votre fichier existe déjà, il se peut que vous ne soyez pas dans le
+            bon repertoire.
+            [read only, File is read only, Permission denied] Read only veut dire que vous ne pouvez pas
+            éditer le fichier, seulement le consulter. Il se peut que vous ayez invoqué Vi en mode “view” ou
+            “vi -R”, ou tout simplement que vous n’ayez pas les droits nécessaires.
+            [Bad file number, Block special file, Character special file, Directory, Executable, Non-ascii
+            file, file non-ASCII] Le fichier que vous essayez d’éditer n’est pas un fichier texte normal,
+            verifiez votre fichier à l’aide de la commande “file”
         </p>
     </div>
     <div id="containerbasic" class="containerboxes">
-        <h1>Basic editting</h1>
-        <p>
-            Nec vox accusatoris ulla licet subditicii in his malorum quaerebatur acervis ut saltem specie
-            tenus crimina
-            praescriptis legum committerentur, quod aliquotiens fecere principes saevi: sed quicquid Caesaris
-            implacabilitati sedisset,
-            id velut fas iusque perpensum confestim urgebatur impleri.
-        </p>
-    </div>
-    <div id="containermodes" class="containerboxes">
-        <h1>Basic editting</h1>
-        <p>
-            Nec vox accusatoris ulla licet subditicii in his malorum quaerebatur acervis ut saltem specie
-            tenus crimina
-            praescriptis legum committerentur, quod aliquotiens fecere principes saevi: sed quicquid Caesaris
-            implacabilitati sedisset,
-            id velut fas iusque perpensum confestim urgebatur impleri.
+        <h1 class="titles">Basic editting</h1>
+        <p class="p4">
+            Une fois votre fichier correctement ouvert et prêt à éditer, nous allons commencer, ouvrez le
+            fichier “helloworld”
+
+            Nous allons voir directement comment sauvegarder, et quitter Vi :
+
+            Pour quitter et sauvegarder :
+
+            ZZ : (SHIFT + z + z)
+            :w : “w” pour write enregistrer les modifications apportées
+            :wq : “w” pour write, “q” pour quit
+
+
+            Pour quitter sans sauvegarder :
+
+            :e! : effacer toutes les modifications apportées et revenir au fichier original
         </p>
     </div>
 </div>
