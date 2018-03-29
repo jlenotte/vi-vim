@@ -97,37 +97,72 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.titles {
+    color: #122844;
+    padding-left: 5pt;
+    left: 0;
+    top: 7pt;
+    font-size: 16pt;
+    font-family: Lato, Arial, sans-serif;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 18pt;
+    padding-left: 200px;
+    font-family: Lato, Arial, sans-serif;
+}
+
+.p4 {
+    font-size: 10pt;
+    color: #122844;
+    padding-left: 5pt;
+    left: 0;
+    top: 7pt;
+    font-family: Lato, Arial, sans-serif;
+    position: relative;
+    width: 100%;
+}
+
+#banner {
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: #122844;
+    z-index: 99;
+}
 
 #container {
     width: 970px;
     background-color: white;
     height: 100%;
+    padding-top: 60px;
     margin: 0 auto;
     /*border-style: solid;*/
     /*border-color: lightgrey;*/
     /*border-width: thin;*/
     margin-bottom: 40px;
+    scroll-behavior: smooth;
 }
-
 
 .containerboxes {
-    width: 970px;
+    width: 900px;
+    max-width: 100%;
     background-color: white;
-    height: 1600px;
+    height: 400px;
     margin: 0 auto;
     margin-bottom: 40px;
-}
+    float: left;
 
+}
 
 body {
     background-color: white;
-    font-family: "Arial" ;
+    font-family: "Arial";
     font-size: 12px;
 }
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -224,9 +259,9 @@ body {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -241,8 +276,9 @@ body {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        color: #000 !important;
+        /* Black prints faster:
+                                          http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -264,7 +300,6 @@ body {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
@@ -273,6 +308,7 @@ body {
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
@@ -283,7 +319,6 @@ body {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
