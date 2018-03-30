@@ -109,7 +109,9 @@ textarea {
 h1 {
     color: whitesmoke;
     font-size: 18pt;
-    padding-left: 200px;
+    padding-left: 240px;
+    padding-right: 45%;
+    float: left;
     font-family: Lato, Arial, sans-serif;
 }
 
@@ -122,7 +124,43 @@ h1 {
     font-family: Lato, Arial, sans-serif;
     position: relative;
     width: 100%;
+    word-wrap: break-spaces;
 }
+
+.navbutton {
+    background-color: #122844;
+    color: white;
+    padding: 16px;
+    font-size: 16pt;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    float: left;
+    display: inline-block;
+
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdowncontent a {
+    color: black;
+    padding: 12px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdowncontent a:hover {background: #ddd}
+.dropdown:hover .dropdowncontent {display: block}
+.dropdown:hover .navbutton {background-color: #b3d4fc}
 
 #banner {
     top: 0;
@@ -135,7 +173,7 @@ h1 {
 }
 
 #container {
-    width: 970px;
+    width: 900px;
     background-color: white;
     height: 100%;
     padding-top: 80px;
@@ -145,6 +183,7 @@ h1 {
     /*border-width: thin;*/
     margin-bottom: 40px;
     scroll-behavior: smooth;
+    word-wrap: break-spaces;
 }
 
 .containerboxes {
@@ -155,7 +194,6 @@ h1 {
     margin: 0 auto;
     margin-bottom: 40px;
     float: left;
-
 }
 
 body {
