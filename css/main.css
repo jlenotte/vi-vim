@@ -14,6 +14,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    scroll-behavior: smooth;
 }
 
 /*
@@ -107,10 +108,10 @@ textarea {
 }
 
 h1 {
-    color: whitesmoke;
+    color: #122844;
     font-size: 18pt;
     padding-left: 240px;
-    padding-right: 45%;
+    padding-right: 50%;
     float: left;
     font-family: Lato, Arial, sans-serif;
 }
@@ -128,18 +129,18 @@ h1 {
 }
 
 .navbutton {
-    background-color: #122844;
-    color: white;
+    /*background-color: #122844;*/
+    color: #122844;
     padding: 16px;
     font-size: 16pt;
     border: none;
+    background-color: white;
 }
 
 .dropdown {
     position: relative;
     float: left;
     display: inline-block;
-
 }
 
 .dropdowncontent {
@@ -160,7 +161,8 @@ h1 {
 
 .dropdowncontent a:hover {background: #ddd}
 .dropdown:hover .dropdowncontent {display: block}
-.dropdown:hover .navbutton {background-color: #b3d4fc}
+.dropdown:hover .navbutton {background-color: #122844}
+.dropdown:hover .navbutton {color: whitesmoke}
 
 #banner {
     top: 0;
@@ -168,7 +170,7 @@ h1 {
     position: fixed;
     height: 60px;
     width: 100%;
-    background-color: #122844;
+    /*background-color: #122844;*/
     z-index: 99;
 }
 
@@ -187,7 +189,7 @@ h1 {
 }
 
 .containerboxes {
-    width: 900px;
+    width: 90%;
     max-width: 100%;
     background-color: white;
     height: 400px;
@@ -201,6 +203,7 @@ body {
     font-family: "Arial";
     font-size: 12px;
 }
+
 
 /* ==========================================================================
    Helper classes
