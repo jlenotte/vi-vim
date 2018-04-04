@@ -1,153 +1,193 @@
 <!doctype html>
 <html class="no-js" lang="">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Learn Vi</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Learn Vi</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
-    <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
-</p>
-<![endif]-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
+            <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+        </p>
+        <![endif]-->
 
-<!-- Add your site or application content here -->
-<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+        <!-- Add your site or application content here -->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
 
-<div id="banner" class="shadow">
-    <h1>Learn Vi</h1>
-    <div class="dropdown">
-        <button class="navbutton">Go to</button>
-        <div class="dropdowncontent">
-            <a href="#containerintro">Vi : Introduction</a>
-            <a href="#containerunderthehood">Vi : Under The Hood</a>
-            <a href="#containermodusoperandi">Vi : Modus Operandi</a>
-            <a href="#containeropening">Vi : Opening Files</a>
-            <a href="#containerbasic">Vi : Basic Editting</a>
+        <div id="banner">
+            <h1>Learn Vi Online</h1>
+            <div class="dropdown">
+                <button class="navbutton">Go to</button>
+                <div class="dropdowncontent">
+                    <a href="#top">Top</a>
+                    <a href="#containerintro">Vi : Introduction</a>
+                    <a href="#containerunderthehood">Vi : Under The Hood</a>
+                    <a href="#containermodusoperandi">Vi : Modus Operandi</a>
+                    <a href="#containeropening">Vi : Opening Files</a>
+                    <a href="#containernav">Vi : Navigation</a>
+                    <a href="#containerbasic">Vi : Basic Editting</a>
+                    <a href="#containerhurry">Vi : Moving in a hurry</a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+        <img src="img/bg.jpg" id="firstbg">
+        <div id="container">
+            <div id="containerintro" class="containerboxes">
+                <h1 class="titles">Introduction</h1>
+                <p class="p4">
+                    Vi est l’un des nombreux editeurs de texte compris au sein d’Unix, parmis eux ceux trouvent ed,
+                    sed, ex qui sont des "line editors" ou editeurs de ligne. Vi est l’un des editeurs standard les
+                    plus utiles dans Unix, meme si pour tout débutant Vi peut sembler extremement non-intuitif et
+                    compliqué à utiliser. Vi est extremement puissant et permet de nombreuses manipulations de
+                    texte très utiles et vous verrez qu’une fois familier avec Vi, tout semblera extremement pratique,
+                    et vous verrez egalement que Vi est très bien conçu. <br>
+                    <br>
+                    Vi n’est pas un editeur du type “What You See Is What You Get” tel que Word, ou Writer, par exemple,
+                    si vous voulez formatter votre texte, l’indenter, ou autre, vous devez ajouter des codes de
+                    formattage afin de changer l’apparence du document. Vi supporte également des fonctions de
+                    formattage de texte basiques telles que le wrapping automatique, l’indentation automatique après
+                    un retour à la ligne, etc etc.
+                </p>
+            </div>
+            <div id="containerhist" class="containerboxes">
+                <h1 class="titles">History</h1>
+                <p class="p4">
+                    Vi fu fondé en 1976 par <a href="https://fr.wikipedia.org/wiki/Bill_Joy" class="nodecolinks">Bill
+                    Joy (William Nelson Joy)</a>, informaticien qui participa au développement d'Unix BSD et
+                    anciennement co-fondateur de Sun Microsystems en 1982.
+                </p>
+                <img src="img/vimkb.jpg" alt="Vi Keyboard Layout" class="picture">
+            </div>
+            <div id="containerunderthehood" class="containerboxes">
+                <h1 class="titles">Under The Hood</h1>
+                <p class="p4">
+                    Vi est un outil très très vieux, qui date des années 70, là ou les claviers ressemblaient à ceci :
 
-<div id="container">
-    <div id="containertitle" class="containerboxes">
-        <p class="p4">
-            Nec vox accusatoris ulla licet subditicii in his malorum quaerebatur acervis ut saltem specie
-            tenus crimina
-            praescriptis legum committerentur, quod aliquotiens fecere principes saevi: sed quicquid Caesaris
-            implacabilitati sedisset,
-            id velut fas iusque perpensum confestim urgebatur impleri.
-        </p>
-        <img src="img/vimkb.jpg" alt="Vi Keyboard Layout" id="vimkb">
-    </div>
-    <div id="containerintro" class="containerboxes">
-        <h1 class="titles">Introduction</h1>
-        <p class="p4">
-            Vi est l’un des nombreux editeurs de texte compris au sein d’Unix, parmis eux ceux trouvent ed,
-            sed, ex qui sont des line editors ou “editeurs de ligne”. Vi est l’un des editeurs standard les
-            plus utiles dans Unix, meme si pour tout débutant Vi peut sembler extremement non intuitif et
-            compliqué d’utilisation. Vi est extremement puissant et permet de nombreuses manipulations de
-            texte très utiles et vous verrez qu’une fois familier avec Vi, tout semblera extremement pratique,
-            et vous verrez egalement que Vi est très bien conçu. Vi n’est pas un editeur tu type “What You See
-            Is What You Get” tel que Word, ou Writer, par exemple, si vous voulez formatter votre texte,
-            l’indenter, ou autre, vous devez ajouter des codes de formattage afin de changer l’apparence du
-            document. Vi supporte également des fonctions de formattage de texte basiques telles que le
-            wrapping automatique, l’indentation automatique après un retour à la ligne, etc etc.
-        </p>
-    </div>
-    <div id="containerunderthehood" class="containerboxes">
-        <h1 class="titles">Under The Hood</h1>
-        <p class="p4">
-            Vi est un outil très très vieux, qui date des années 70, là ou les claviers ressemblaient à ceci :
+                    <img src="" alt="ADM-3 Keyboard">
+                    Ce qui explique directement la manière dont Vi a été conçu.
 
-            <img src="" alt="ADM-3 Keyboard">
-            Ce qui explique directement la manière dont Vi a été conçu.
-
-            Vi fonctionne de la manière suivante : lorsque vous ouvrez un fichier avec Vi, Vi ouvre une
-            copie de ce fichier en buffer dans la mémoire et non sur le disque. Quand vous enregistrez ce
-            fichier, le buffer écrase la version précedente et remplace par la version editée qui se
-            trouve dans le buffer.
-        </p>
-    </div>
-    <div id="containermodusoperandi" class="containerboxes">
-        <h1 class="titles">Modus Operandi</h1>
-        <p class="p4">
-            Le fonctionnement fondamental de Vi repose sur des “modes” d’edition, ces modes sont
-            principalement :
-
-            * Insert [ i ]
-            * Command [ esc ]
-
-            En arrivant dans Vi, nous commençons en mode command, ou ce que vous taperez sera interprété en
-            tant que commande.
-            En mode Insert (insertion), tout ce que vous tapez devient du texte dans votre fichier. Parfois,
-            il peut arriver que vous entrez ou quittez le mode d’insert accidentellement, et si vous avez un
-            doute, don’t panic, appuyez simplement sur ESC, ce qui vous renverra vers le mode command, d’ou
-            vous pourrez à nouveau réparer toute modification apportée accidentellement.
-        </p>
-    </div>
-    <div id="containeropening" class="containerboxes">
-        <h1 class="titles">Opening Files</h1>
-        <p class="p4">
-            La meilleure façon d’apprendre à utiliser Vi reste de le pratiquer et d’éditer avec. <br>
-
-            Pour lancer Vi, tapez donc “vi [nom de votre fichier]” dans un terminal.
-            Ou “vi [/chemin/vers/votrefichier]”
-
-            Des problèmes pour ouvrir un fichier?
-
-            Si lorsque vous invoquez Vi, l’un des messages suivants apparait :
-
-            [open mode] → Votre terminal est peut etre mal défini, verifier la variable d’env $TERM et
-            assignez lui quel terminal vous voulez utiliser par défaut.
-            [Visual needs addressable cursor or upline capability, Bad termcap entry, Termcap entry too long,
-            terminal: Unknown terminal type, Block device required, Not a typewriter] → votre type de terminal
-            est soit non défini, soit quelquechose n’est pas bon avec votre entrée terminfo ou termcap.
-            [new file] si vous pensez que votre fichier existe déjà, il se peut que vous ne soyez pas dans le
-            bon repertoire.
-            [read only, File is read only, Permission denied] Read only veut dire que vous ne pouvez pas
-            éditer le fichier, seulement le consulter. Il se peut que vous ayez invoqué Vi en mode “view” ou
-            “vi -R”, ou tout simplement que vous n’ayez pas les droits nécessaires.
-            [Bad file number, Block special file, Character special file, Directory, Executable, Non-ascii
-            file, file non-ASCII] Le fichier que vous essayez d’éditer n’est pas un fichier texte normal,
-            verifiez votre fichier à l’aide de la commande “file”
-        </p>
-    </div>
-    <div id="containerbasic" class="containerboxes">
-        <h1 class="titles">Basic editting</h1>
-        <p class="p4">
-            Une fois votre fichier correctement ouvert et prêt à éditer, nous allons commencer, ouvrez le
-            fichier “helloworld”
-
-            Nous allons voir directement comment sauvegarder, et quitter Vi :
-
-            Pour quitter et sauvegarder :
-
-            ZZ : (SHIFT + z + z)
-            :w : “w” pour write enregistrer les modifications apportées
-            :wq : “w” pour write, “q” pour quit
-
-
-            Pour quitter sans sauvegarder :
-
-            :e! : effacer toutes les modifications apportées et revenir au fichier original
-        </p>
-    </div>
-</div>
-</body>
+                    Vi fonctionne de la manière suivante : lorsque vous ouvrez un fichier avec Vi, Vi ouvre une
+                    copie de ce fichier en buffer dans la mémoire et non sur le disque. Quand vous enregistrez ce
+                    fichier, le buffer écrase la version précedente et remplace par la version editée qui se
+                    trouve dans le buffer.
+                </p>
+            </div>
+            <div id="containermodusoperandi" class="containerboxes">
+                <h1 class="titles">Modus Operandi</h1>
+                <p class="p4">
+                    Le fonctionnement fondamental de Vi repose sur des “modes” d’edition, ces modes sont
+                    principalement :<br>
+                    <br>
+                    * Insert <code>[ i ]</code><br>
+                    * Command <code>[ esc ]</code><br>
+                    <br>
+                    En arrivant dans Vi, nous commençons en mode command, ou ce que vous taperez sera interprété en
+                    tant que commande.<br>
+                    En mode --Insert (insertion), tout ce que vous tapez devient du texte dans votre fichier. Parfois,
+                    il peut arriver que vous entrez ou quittez le mode d’insert accidentellement, et si vous avez un
+                    doute, don’t panic, appuyez simplement sur <code>ESC</code>, ce qui vous renverra vers le mode
+                    command, d’ou
+                    vous pourrez à nouveau réparer toute modification apportée accidentellement.
+                </p>
+            </div>
+            <div id="containeropening" class="containerboxes">
+                <h1 class="titles">Opening Files</h1>
+                <p class="p4">
+                    La meilleure façon d’apprendre à utiliser Vi reste de le pratiquer et d’éditer avec. <br>
+                    <br>
+                    Pour lancer Vi, tapez donc “<code>vi [nom de votre fichier]</code>” dans un terminal.<br>
+                    Ou “<code>vi [/chemin/vers/votrefichier]</code>”<br>
+                    <br>
+                    Des problèmes pour ouvrir un fichier?<br>
+                    <br>
+                    Si lorsque vous invoquez Vi, l’un des messages suivants apparait :<br>
+                    <br>
+                    [open mode] → Votre terminal est peut etre mal défini, verifier la variable d’env $TERM et
+                    assignez lui quel terminal vous voulez utiliser par défaut.<br>
+                    <br>
+                    [Visual needs addressable cursor or upline capability, Bad termcap entry, Termcap entry too long,
+                    terminal: Unknown terminal type, Block device required, Not a typewriter] → votre type de terminal
+                    est soit non défini, soit quelquechose n’est pas bon avec votre entrée terminfo ou termcap.<br>
+                    <br>
+                    [new file] si vous pensez que votre fichier existe déjà, il se peut que vous ne soyez pas dans le
+                    bon repertoire.<br>
+                    <br>
+                    [read only, File is read only, Permission denied] Read only veut dire que vous ne pouvez pas
+                    éditer le fichier, seulement le consulter. Il se peut que vous ayez invoqué Vi en mode
+                    “<code>view</code>” ou
+                    “<code>vi -R</code>”, ou tout simplement que vous n’ayez pas les droits nécessaires.<br>
+                    <br>
+                    [Bad file number, Block special file, Character special file, Directory, Executable, Non-ascii
+                    file, file non-ASCII] Le fichier que vous essayez d’éditer n’est pas un fichier texte normal,
+                    verifiez votre fichier à l’aide de la commande “<code>file</code>”<br>
+                </p>
+            </div>
+            <div id="containernav" class="containerboxes">
+                <h1 class="titles">Navigation</h1>
+                <p class="p4">
+                    Voici comment vous pouvez naviguer dans Vi: <br>
+                    <code>h</code> : déplacer le curseur à gauche <br>
+                    <code>j</code> : déplacer le curseur en bas <br>
+                    <code>k</code> : déplacer le curseur en haut <br>
+                    <code>l</code> : déplacer le curseur à droite <br>
+                </p>
+            </div>
+            <div id="containerbasic" class="containerboxes">
+                <h1 class="titles">Basic editting</h1>
+                <p class="p4">
+                    Une fois votre fichier correctement ouvert et prêt à éditer, nous allons commencer, ouvrez le
+                    fichier “helloworld”<br>
+                    <br>
+                    Nous allons voir directement comment sauvegarder, et quitter Vi :<br>
+                    <br>
+                    Pour quitter et sauvegarder :<br>
+                    <br>
+                    <code>ZZ</code> : (SHIFT + z + z)<br>
+                    <code>:w</code> : “w” pour write enregistrer les modifications apportées<br>
+                    <code>:wq</code> : “w” pour write, “q” pour quit<br>
+                    <br>
+                    <br>
+                    Pour quitter sans sauvegarder :<br>
+                    <br>
+                    <code>:e!</code> : effacer toutes les modifications apportées et revenir au fichier original<br>
+                </p>
+            </div>
+            <div id="containerhurry" class="containerboxes">
+                <h1 class="titles">Moving in a hurry</h1>
+                <p class="p4">
+                    Une fois votre fichier correctement ouvert et prêt à éditer, nous allons commencer, ouvrez le
+                    fichier “helloworld”<br>
+                    <br>
+                    Nous allons voir directement comment sauvegarder, et quitter Vi :<br>
+                    <br>
+                    Pour quitter et sauvegarder :<br>
+                    <br>
+                    <code>ZZ</code> : (SHIFT + z + z)<br>
+                    <code>:w</code> : “w” pour write enregistrer les modifications apportées<br>
+                    <code>:wq</code> : “w” pour write, “q” pour quit<br>
+                    <br>
+                    <br>
+                    Pour quitter sans sauvegarder :<br>
+                    <br>
+                    <code>:e!</code> : effacer toutes les modifications apportées et revenir au fichier original<br>
+                </p>
+            </div>
+        </div>
+    </body>
 </html>
