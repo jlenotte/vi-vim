@@ -98,6 +98,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+.shadow {
+    -moz-box-shadow:    2px 2px 3px 2px #ccc;
+    -webkit-box-shadow: 2px 2px 3px 2px #ccc;
+    box-shadow:         2px 2px 3px 2px #ccc;
+}
+
 .titles {
     color: #122844;
     padding-left: 5pt;
@@ -106,6 +113,12 @@ textarea {
     font-size: 16pt;
     font-family: Lato, Arial, sans-serif;
 }
+
+
+#vimkb {
+    width: 100%;
+}
+
 
 h1 {
     color: #122844;
@@ -170,7 +183,7 @@ h1 {
     position: fixed;
     height: 60px;
     width: 100%;
-    /*background-color: #122844;*/
+    background-color: #fff;
     z-index: 99;
 }
 
@@ -199,8 +212,11 @@ h1 {
 }
 
 body {
-    background-color: white;
-    font-family: "Arial";
+    /*background-color: white;*/
+    background: #fff linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    font-family: Lato, Arial, sans-serif;
     font-size: 12px;
 }
 
