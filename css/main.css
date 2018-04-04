@@ -110,6 +110,7 @@ textarea {
     width: 100%;
 }
 
+
 .titles {
     color: #122844;
     padding-left: 5pt;
@@ -235,6 +236,14 @@ h1 {
 }
 
 
+@media screen and (max-width:640px) {
+    #firstbg {
+        display: none;
+    }
+}
+
+
+
 code {
     background-color: #eeeeee;
 }
@@ -253,6 +262,31 @@ body {
     background-size: 100% 1.2em;
     font-family: Lato, Arial, sans-serif;
     font-size: 12px;
+}
+
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #122844;
+    color: #fff;
+    font-family: Lato, Arial, sans-serif;
+    padding-bottom: -40px;
+}
+
+
+#footer p {
+    position: relative;
+    float: left;
+    font-family: Lato, Arial, sans-serif;
+    color: lightgray;
+    font-size: 10pt;
+    padding-top: 20px;
+    padding-left: 18%;
+    padding-right: 18%;
+    text-align: center;
 }
 
 
