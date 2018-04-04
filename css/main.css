@@ -215,6 +215,7 @@ h1 {
     margin-bottom: 40px;
     scroll-behavior: smooth;
     word-wrap: break-spaces;
+    float: bottom;
 }
 
 
@@ -222,10 +223,15 @@ h1 {
     width: 90%;
     max-width: 100%;
     background-color: white;
-    text-wrap: normal;
+    word-wrap: break-spaces;
     height: 100%;
     margin: 0 0 60px;
     float: left;
+}
+
+/* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */
+@media only screen and (max-width: 1080px){
+    #container { width: 90%; }
 }
 
 
