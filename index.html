@@ -1,257 +1,292 @@
 <!doctype html>
 <html class="no-js" lang="">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Learn Vi</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Learn Vi</title>
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
-    <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
-</p>
-<![endif]-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
+            <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+        </p>
+        <![endif]-->
 
-<!-- Add your site or application content here -->
-<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+        <!-- Add your site or application content here -->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
 
-<div id="banner">
-    <h1>Learn Vi Online</h1>
-    <div class="dropdown">
-        <button class="navbutton">Go to</button>
-        <div class="dropdowncontent">
-            <a href="#top">Top</a>
-            <a href="#containerintro">Vi : Introduction</a>
-            <a href="#containerunderthehood">Vi : Under The Hood</a>
-            <a href="#containermodusoperandi">Vi : Modus Operandi</a>
-            <a href="#containeropening">Vi : Opening Files</a>
-            <a href="#containernav">Vi : Navigation</a>
-            <a href="#containerbasic">Vi : Basic Editting</a>
-            <a href="#containerhurry">Vi : Moving in a hurry</a>
+        <div id="banner">
+            <h1>Learn Vi Online</h1>
+            <div class="dropdown">
+                <button class="navbutton">Go to</button>
+                <div class="dropdowncontent">
+                    <a href="#top">Top</a>
+                    <a href="#containerintro">Vi : Introduction</a>
+                    <a href="#containerunderthehood">Vi : Under The Hood</a>
+                    <a href="#containermodusoperandi">Vi : Modus Operandi</a>
+                    <a href="#containeropening">Vi : Opening Files</a>
+                    <a href="#containernav">Vi : Navigation</a>
+                    <a href="#containerbasic">Vi : Basic Editting</a>
+                    <a href="#containerhurry">Vi : Moving in a hurry</a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<img src="img/bg.jpg" id="firstbg">
-<div id="container">
-    <div id="containerintro" class="containerboxes">
-        <h1 class="titles">Introduction</h1>
-        <p class="p4">
-            Vi est l’un des nombreux editeurs de texte compris au sein d’Unix, parmis eux ceux trouvent ed,
-            sed, ex qui sont des "line editors" ou editeurs de ligne. Vi est l’un des editeurs standard les
-            plus utiles dans Unix, meme si pour tout débutant Vi peut sembler extremement non-intuitif et
-            compliqué à utiliser. Vi est extremement puissant et permet de nombreuses manipulations de
-            texte très utiles et vous verrez qu’une fois familier avec Vi, tout semblera extremement pratique,
-            et vous verrez egalement que Vi est très bien conçu. <br>
-            <br>
-            Vi n’est pas un editeur du type “What You See Is What You Get” tel que Word, ou Writer, par
-            exemple,
-            si vous voulez formatter votre texte, l’indenter, ou autre, vous devez ajouter des codes de
-            formattage afin de changer l’apparence du document. Vi supporte également des fonctions de
-            formattage de texte basiques telles que le wrapping automatique, l’indentation automatique après
-            un retour à la ligne, etc etc.
-        </p>
-    </div>
-    <div id="containerhist" class="containerboxes">
-        <h1 class="titles">History</h1>
-        <p class="p4">
-            Vi fu fondé en 1976 par <a href="https://fr.wikipedia.org/wiki/Bill_Joy" class="nodecolinks">Bill
-            Joy (William Nelson Joy)</a>, informaticien qui participa au développement d'Unix BSD et
-            anciennement co-fondateur de Sun Microsystems en 1982.
-        </p>
-        <img src="img/vimkb.jpg" alt="Vi Keyboard Layout" class="picture">
-    </div>
-    <div id="containerunderthehood" class="containerboxes">
-        <h1 class="titles">Under The Hood</h1>
-        <p class="p4">
-            Vi est très vieil outil, qui date des années 70, là ou les claviers ressemblaient à ceci
-            :<br>
-            <br>
-            <img src="img/keyboard.jpg" alt="ADM-3 Keyboard" class="picture"><br>
-            <br>
-            Ce qui explique directement la manière dont Vi a été conçu.<br>
-            <br>
-            Vi fonctionne de la manière suivante : lorsque vous ouvrez un fichier avec Vi, Vi ouvre une
-            copie de ce fichier en buffer dans la mémoire et non sur le disque. Quand vous enregistrez ce
-            fichier, le buffer écrase la version précedente et remplace par la version editée qui se
-            trouve dans le buffer.
-        </p>
-    </div>
-    <div id="containermodusoperandi" class="containerboxes">
-        <h1 class="titles">Modus Operandi</h1>
-        <p class="p4">
-            Le fonctionnement fondamental de Vi repose sur des “modes” d’edition, ces modes sont
-            principalement :<br>
-            <br>
-            * Insert <code>[ i ]</code><br>
-            * Command <code>[ esc ]</code><br>
-            <br>
-            En arrivant dans Vi, nous commençons en mode command, ou ce que vous taperez sera interprété en
-            tant que commande.<br>
-            En mode --Insert (insertion), tout ce que vous tapez devient du texte dans votre fichier. Parfois,
-            il peut arriver que vous entrez ou quittez le mode d’insert accidentellement, et si vous avez un
-            doute, don’t panic, appuyez simplement sur <code>ESC</code>, ce qui vous renverra vers le mode
-            command, d’ou
-            vous pourrez à nouveau réparer toute modification apportée accidentellement.
-        </p>
-    </div>
-    <div id="containeropening" class="containerboxes">
-        <h1 class="titles">Opening Files</h1>
-        <p class="p4">
-            La meilleure façon d’apprendre à utiliser Vi reste de le pratiquer et d’éditer avec. <br>
-            <br>
-            Pour lancer Vi, tapez donc “<code>vi [nom de votre fichier]</code>” dans un terminal.<br>
-            Ou “<code>vi [/chemin/vers/votrefichier]</code>”<br>
-            <br>
-            Des problèmes pour ouvrir un fichier?<br>
-            <br>
-            Si lorsque vous invoquez Vi, l’un des messages suivants apparait :<br>
-            <br>
-            [open mode] → Votre terminal est peut etre mal défini, verifier la variable d’env $TERM et
-            assignez lui quel terminal vous voulez utiliser par défaut.<br>
-            <br>
-            [Visual needs addressable cursor or upline capability, Bad termcap entry, Termcap entry too long,
-            terminal: Unknown terminal type, Block device required, Not a typewriter] → votre type de terminal
-            est soit non défini, soit quelquechose n’est pas bon avec votre entrée terminfo ou termcap.<br>
-            <br>
-            [new file] si vous pensez que votre fichier existe déjà, il se peut que vous ne soyez pas dans le
-            bon repertoire.<br>
-            <br>
-            [read only, File is read only, Permission denied] Read only veut dire que vous ne pouvez pas
-            éditer le fichier, seulement le consulter. Il se peut que vous ayez invoqué Vi en mode
-            “<code>view</code>” ou
-            “<code>vi -R</code>”, ou tout simplement que vous n’ayez pas les droits nécessaires.<br>
-            <br>
-            [Bad file number, Block special file, Character special file, Directory, Executable, Non-ascii
-            file, file non-ASCII] Le fichier que vous essayez d’éditer n’est pas un fichier texte normal,
-            verifiez votre fichier à l’aide de la commande “<code>file</code>”<br>
-        </p>
-    </div>
-    <div id="containernav" class="containerboxes">
-        <h1 class="titles">Navigation</h1>
-        <p class="p4">
-            Voici comment vous pouvez naviguer dans Vi: <br>
-            <br>
-            <code>h</code> : déplacer le curseur à gauche <br>
-            <code>j</code> : déplacer le curseur en bas <br>
-            <code>k</code> : déplacer le curseur en haut <br>
-            <code>l</code> : déplacer le curseur à droite <br>
-            <br>
-            Au début, cela peut paraître réellement étrange et inhabituel d'utiliser des lettres pour ce
-            déplacer, mais une fois habitué, vous verrez que c'est très pratique car vous serez capable de
-            naviguer facilement dans un document sans jamais éloigner les mains du centre du clavier.<br>
-            <br>
-            Les commandes suivantes sont "hors de portée" mais servent également à se déplacer: <br>
-            <br>
-            <code>BACKSPACE</code> déplacer le curseur à gauche <br>
-            <code>SPACE</code> déplacer le curseur à droite <br>
-            <code>+</code> : descendre d'une ligne <br>
-            <code>-</code> : monter d'une ligne <br>
-            <br>
-            Arguments numériques: <br>
-            <br>
-            Vous pouvez apposer un chiffre devant l'une des lettres de déplacement afin de naviguer de N lettres à la fois, exemple : <br>
-            <code>4l</code> : déplacer le curseur de 4 espaces vers la droite <br>
-            <br>
-            <img src="img/4l.png" alt="Déplacement de 4 espaces vers la droite"> <br>
-            <br>
-            Déplacements dans une ligne (lignes logiques, pas lignes "wrappées" par la bordure de l'écran) : <br>
-            <br>
-            <code>0</code> : déplacer le curseur au début de la ligne <br>
-            <code>$</code> : déplacer le curseur à la fin de la ligne <br>
-            <br>
-            Déplacements par blocks de lignes/mots : <br>
-            <br>
-            <code>w</code> : déplacer le curseur d'un mot à la fois, en comptant les symboles et la ponctuation <br>
-            <code>W</code> : déplacer le curseur d'un mot à la fois, sans compter les symboles et la ponctuation <br>
-            <code>b</code> : déplacer le curseur d'un mot à la fois en arrière, en comptant les symboles et la ponctuation <br>
-            <code>B</code> : déplacer le curseur d'un mot à la fois en arrière, sans compter les symboles et la ponctuation <br>
-            <br>
-            Il est également possible d'apposer un chiffre devant ces lettres, exemple :
-            <br>
-            <code>5B</code> : déplacer le curseur 5 mots en arrière sans ponctuation <br>
-            <br>
-            Pour se déplacer à une ligne en particulier : <br>
-            <br>
-            <code>45G</code> : aller à la ligne 45 <br>
-            <code>gg</code> : aller tout au début du fichier et de la première ligne <br>
-            <code>G</code> : aller tout à la fin du fichier et de la dernière ligne <br>
-        </p>
-    </div>
-    <div id="containerbasic" class="containerboxes">
-        <h1 class="titles">Basic editting</h1>
-        <p class="p4">
-            Une fois votre fichier correctement ouvert et prêt à éditer, nous allons commencer, ouvrez le
-            fichier “helloworld”<br>
-            <br>
-            Nous allons voir directement comment sauvegarder, et quitter Vi : <br>
-            <br>
-            Pour quitter et sauvegarder : <br>
-            <br>
-            <code>ZZ</code> : (SHIFT + z + z)<br>
-            <code>:w</code> : “w” pour write enregistrer les modifications apportées <br>
-            <code>:wq</code> : “w” pour write, “q” pour quit <br>
-            <br>
-            <br>
-            Pour quitter sans sauvegarder : <br>
-            <br>
-            <code>:e!</code> : effacer toutes les modifications apportées et revenir au fichier original <br>
+        <img src="img/bg.jpg" id="firstbg">
+        <div id="container">
+            <div id="containerintro" class="containerboxes">
+                <h1 class="titles">Introduction</h1>
+                <p class="p4">
+                    Vi est l’un des nombreux editeurs de texte compris au sein d’Unix, parmis eux ceux trouvent ed,
+                    sed, ex qui sont des "line editors" ou editeurs de ligne. Vi est l’un des editeurs standard les
+                    plus utiles dans Unix, meme si pour tout débutant Vi peut sembler extremement non-intuitif et
+                    compliqué à utiliser. Vi est extremement puissant et permet de nombreuses manipulations de
+                    texte très utiles et vous verrez qu’une fois familier avec Vi, tout semblera extremement pratique,
+                    et vous verrez egalement que Vi est très bien conçu. <br>
+                    <br>
+                    Vi n’est pas un editeur du type “What You See Is What You Get” tel que Word, ou Writer, par
+                    exemple,
+                    si vous voulez formatter votre texte, l’indenter, ou autre, vous devez ajouter des codes de
+                    formattage afin de changer l’apparence du document. Vi supporte également des fonctions de
+                    formattage de texte basiques telles que le wrapping automatique, l’indentation automatique après
+                    un retour à la ligne, etc etc.
+                </p>
+            </div>
+            <div id="containerhist" class="containerboxes">
+                <h1 class="titles">History</h1>
+                <p class="p4">
+                    Vi fu fondé en 1976 par <a href="https://fr.wikipedia.org/wiki/Bill_Joy" class="nodecolinks">Bill
+                    Joy (William Nelson Joy)</a>, informaticien qui participa au développement d'Unix BSD et
+                    anciennement co-fondateur de Sun Microsystems en 1982.
+                </p>
+                <img src="img/vimkb.jpg" alt="Vi Keyboard Layout" class="picture">
+            </div>
+            <div id="containerunderthehood" class="containerboxes">
+                <h1 class="titles">Under The Hood</h1>
+                <p class="p4">
+                    Vi est très vieil outil, qui date des années 70, là ou les claviers ressemblaient à ceci
+                    :<br>
+                    <br>
+                    <img src="img/keyboard.jpg" alt="ADM-3 Keyboard" class="picture"><br>
+                    <br>
+                    Ce qui explique directement la manière dont Vi a été conçu.<br>
+                    <br>
+                    Vi fonctionne de la manière suivante : lorsque vous ouvrez un fichier avec Vi, Vi ouvre une
+                    copie de ce fichier en buffer dans la mémoire et non sur le disque. Quand vous enregistrez ce
+                    fichier, le buffer écrase la version précedente et remplace par la version editée qui se
+                    trouve dans le buffer.
+                </p>
+            </div>
+            <div id="containermodusoperandi" class="containerboxes">
+                <h1 class="titles">Modus Operandi</h1>
+                <p class="p4">
+                    Le fonctionnement fondamental de Vi repose sur des “modes” d’edition, ces modes sont
+                    principalement :<br>
+                    <br>
+                    * Insert <code>[ i ]</code><br>
+                    * Command <code>[ esc ]</code><br>
+                    <br>
+                    En arrivant dans Vi, nous commençons en mode command, ou ce que vous taperez sera interprété en
+                    tant que commande.<br>
+                    En mode --Insert (insertion), tout ce que vous tapez devient du texte dans votre fichier. Parfois,
+                    il peut arriver que vous entrez ou quittez le mode d’insert accidentellement, et si vous avez un
+                    doute, don’t panic, appuyez simplement sur <code>ESC</code>, ce qui vous renverra vers le mode
+                    command, d’ou
+                    vous pourrez à nouveau réparer toute modification apportée accidentellement.
+                </p>
+            </div>
+            <div id="containeropening" class="containerboxes">
+                <h1 class="titles">Opening Files</h1>
+                <p class="p4">
+                    La meilleure façon d’apprendre à utiliser Vi reste de le pratiquer et d’éditer avec. <br>
+                    <br>
+                    Pour lancer Vi, tapez donc “<code>vi [nom de votre fichier]</code>” dans un terminal.<br>
+                    Ou “<code>vi [/chemin/vers/votrefichier]</code>”<br>
+                    <br>
+                    Des problèmes pour ouvrir un fichier?<br>
+                    <br>
+                    Si lorsque vous invoquez Vi, l’un des messages suivants apparait :<br>
+                    <br>
+                    [open mode] → Votre terminal est peut etre mal défini, verifier la variable d’env $TERM et
+                    assignez lui quel terminal vous voulez utiliser par défaut.<br>
+                    <br>
+                    [Visual needs addressable cursor or upline capability, Bad termcap entry, Termcap entry too long,
+                    terminal: Unknown terminal type, Block device required, Not a typewriter] → votre type de terminal
+                    est soit non défini, soit quelquechose n’est pas bon avec votre entrée terminfo ou termcap.<br>
+                    <br>
+                    [new file] si vous pensez que votre fichier existe déjà, il se peut que vous ne soyez pas dans le
+                    bon repertoire.<br>
+                    <br>
+                    [read only, File is read only, Permission denied] Read only veut dire que vous ne pouvez pas
+                    éditer le fichier, seulement le consulter. Il se peut que vous ayez invoqué Vi en mode
+                    “<code>view</code>” ou
+                    “<code>vi -R</code>”, ou tout simplement que vous n’ayez pas les droits nécessaires.<br>
+                    <br>
+                    [Bad file number, Block special file, Character special file, Directory, Executable, Non-ascii
+                    file, file non-ASCII] Le fichier que vous essayez d’éditer n’est pas un fichier texte normal,
+                    verifiez votre fichier à l’aide de la commande “<code>file</code>”<br>
+                </p>
+            </div>
+            <div id="containernav" class="containerboxes">
+                <h1 class="titles">Navigation</h1>
+                <p class="p4">
+                    Voici comment vous pouvez naviguer dans Vi: <br>
+                    <br>
+                    <code>h</code> : déplacer le curseur à gauche <br>
+                    <code>j</code> : déplacer le curseur en bas <br>
+                    <code>k</code> : déplacer le curseur en haut <br>
+                    <code>l</code> : déplacer le curseur à droite <br>
+                    <br>
+                    Au début, cela peut paraître réellement étrange et inhabituel d'utiliser des lettres pour ce
+                    déplacer, mais une fois habitué, vous verrez que c'est très pratique car vous serez capable de
+                    naviguer facilement dans un document sans jamais éloigner les mains du centre du clavier.<br>
+                    <br>
+                    Les commandes suivantes sont "hors de portée" mais servent également à se déplacer: <br>
+                    <br>
+                    <code>BACKSPACE</code> déplacer le curseur à gauche <br>
+                    <code>SPACE</code> déplacer le curseur à droite <br>
+                    <code>+</code> : descendre d'une ligne <br>
+                    <code>-</code> : monter d'une ligne <br>
+                    <br>
+                    Arguments numériques: <br>
+                    <br>
+                    Vous pouvez apposer un chiffre devant l'une des lettres de déplacement afin de naviguer de N lettres
+                    à la fois, exemple : <br>
+                    <code>4l</code> : déplacer le curseur de 4 espaces vers la droite <br>
+                    <br>
+                    <img src="img/4l.png" alt="Déplacement de 4 espaces vers la droite"> <br>
+                    <br>
+                    Déplacements dans une ligne (lignes logiques, pas lignes "wrappées" par la bordure de l'écran) :
+                    <br>
+                    <br>
+                    <code>0</code> : déplacer le curseur au début de la ligne <br>
+                    <code>$</code> : déplacer le curseur à la fin de la ligne <br>
+                    <br>
+                    Déplacements par blocks de lignes/mots : <br>
+                    <br>
+                    <code>w</code> : déplacer le curseur d'un mot à la fois, en comptant les symboles et la ponctuation
+                    <br>
+                    <code>W</code> : déplacer le curseur d'un mot à la fois, sans compter les symboles et la ponctuation
+                    <br>
+                    <code>b</code> : déplacer le curseur d'un mot à la fois en arrière, en comptant les symboles et la
+                    ponctuation <br>
+                    <code>B</code> : déplacer le curseur d'un mot à la fois en arrière, sans compter les symboles et la
+                    ponctuation <br>
+                    <br>
+                    Il est également possible d'apposer un chiffre devant ces lettres, exemple :
+                    <br>
+                    <code>5B</code> : déplacer le curseur 5 mots en arrière sans ponctuation <br>
+                    <br>
+                    Pour se déplacer à une ligne en particulier : <br>
+                    <br>
+                    <code>45G</code> : aller à la ligne 45 <br>
+                    <code>gg</code> : aller tout au début du fichier et de la première ligne <br>
+                    <code>G</code> : aller tout à la fin du fichier et de la dernière ligne <br>
+                </p>
+            </div>
+            <div id="containerbasic" class="containerboxes">
+                <h1 class="titles">Basic editting</h1>
+                <p class="p4">
+                    Une fois votre fichier correctement ouvert et prêt à éditer, nous allons commencer, ouvrez le
+                    fichier “helloworld”<br>
+                    <br>
+                    Nous allons voir directement comment sauvegarder, et quitter Vi : <br>
+                    <br>
+                    Pour quitter et sauvegarder : <br>
+                    <br>
+                    <code>ZZ</code> : (SHIFT + z + z)<br>
+                    <code>:w</code> : “w” pour write enregistrer les modifications apportées <br>
+                    <code>:wq</code> : “w” pour write, “q” pour quit <br>
+                    <br>
+                    <br>
+                    Pour quitter sans sauvegarder : <br>
+                    <br>
+                    <code>:e!</code> : effacer toutes les modifications apportées et revenir au fichier original <br>
 
-            Edition du texte <br>
-            <br>
-            <code>a</code> : passe en mode insertion comme avec <code>i</code> mais un espace à droite du curseur <br>
-            <code>c</code> : changer le texte à l'endroit du curseur <br>
-            <code>cw</code> : changer le texte à la fin du mot, en précisant la "quantité" à éditer, ici, <code>w</code> pour changer le mot entier <br>
-            <code>c2b</code> : changer le texte 2 mots en arrière <br>
-            <code>c$</code> : changer le texte à la fin de la ligne <br>
-            <code>c0</code> : changer le texte au début de la ligne <br>
-            <code>cc</code> : remplacer la ligne entière par ce qui sera tapé avant d'appuyer sur <code>ESC</code>, peu importe la position du curseur <br>
-            <code>r</code> : remplacer la lettre située sur le curseur <br>
-            <code>R</code> : remplacer la lettre située sur le curseur mais en mode continu, jusqu'à ce que <code>ESC</code> soit tapé <br>
+                    Edition du texte <br>
+                    <br>
+                    <code>a</code> : passe en mode insertion comme avec <code>i</code> mais un espace à droite du
+                    curseur <br>
+                    <br>
+                    Changements de texte <br>
+                    <br>
+                    <code>c</code> : "c" pour change, changer le texte à l'endroit du curseur <br>
+                    <code>cw</code> : changer le texte à la fin du mot, en précisant la "quantité" à éditer, ici, <code>w</code>
+                    pour changer le mot entier <br>
+                    <code>c2b</code> : changer le texte 2 mots en arrière <br>
+                    <code>c$</code> : changer le texte à la fin de la ligne <br>
+                    <code>c0</code> : changer le texte au début de la ligne <br>
+                    <code>cc</code> : "r" pour replace, remplacer la ligne entière par ce qui sera tapé avant d'appuyer
+                    sur <code>ESC</code>, peu importe la position du curseur <br>
+                    <br>
+                    Remplacement & substitution de texte <br>
+                    <br>
+                    <code>r</code> : remplacer la lettre située sur le curseur <br>
+                    <code>R</code> : remplacer la lettre située sur le curseur mais en mode continu, jusqu'à ce que
+                    <code>ESC</code> soit tapé <br>
+                    <code>s</code> : "s" pour substitute, substituer quelques charactères, pas le mot entier <br>
+                    <code>S</code> : substituer des lignes entières <br>
+                    <code>~</code> : la tilde est une forme spéciale de remplacement, elle inverse la casse de
+                    l'emplacement du curseur <br>
+                    <br>
+                    Suppression de texte <br>
+                    <br>
+                    <code>d</code> : "d" pour delete, apposée à un complément, "d" permet de supprimer ce qui sera
+                    indiqué, ex: <code>dw</code> pour supprimer un mot complet. L'espace qui suit le mot supprimé est
+                    également supprimé. <br>
+                    <code>dd</code> : supprime la ligne complète, contrairement à <code>cc</code>, <code>dd</code> ne
+                    supprime pas qu'une partie de la ligne à l'endroit du curseur <br>
+                    <code>D</code> : supprime tout ce qu'il y a entre le curseur et la fin de la ligne <br>
+                    <code>d$</code> : supprime tout ce qu'il y a entre le curseur et la fin de la ligne, alternative à <code>D</code> <br>
+                    <code>x</code> : supprime uniquement le charactère présent sur le curseur <br>
+                    <br>
+                    Restaurer ou annuler des changements <br>
+                    <br>
+                    <code>p</code> :
 
 
-        </p>
-    </div>
-    <div id="containerhurry" class="containerboxes">
-        <h1 class="titles">Moving in a hurry</h1>
-        <p class="p4">
+                </p>
+            </div>
+            <div id="containerhurry" class="containerboxes">
+                <h1 class="titles">Moving in a hurry</h1>
+                <p class="p4">
 
-        </p>
-    </div>
-    <div id="containercopy" class="containerboxes">
-        <h1 class="titles">Copying and Pasting content</h1>
-        <p class="p4">
-            Dans Vi, il est possible d'effectuer des opérations basiques de copie de texte, et ce, d'une
-            multitude de façons. <br>
-            <br>
+                </p>
+            </div>
+            <div id="containercopy" class="containerboxes">
+                <h1 class="titles">Copying and Pasting content</h1>
+                <p class="p4">
+                    Dans Vi, il est possible d'effectuer des opérations basiques de copie de texte, et ce, d'une
+                    multitude de façons. <br>
+                    <br>
 
 
-        </p>
-    </div>
-</div>
-<div id="footer">
-    <p>
-        Cette page a été réalisé dans le cadre d'un projet/exposé sur l'apprentissage de Vi dans les systèmes
-        Unix. L'année scolaire de ce projet est 2017-2018, lors de la Licence L3 d'informatique générale au
-        CNAM de Lille, dans le cadre du module NSY103 (Architecure Systèmes & Linux).<br>
-        <br>
-        Author: Jules Lenotte<br>
-        <br>
-    </p>
-</div>
-</body>
+                </p>
+            </div>
+        </div>
+        <div id="footer">
+            <p>
+                Cette page a été réalisé dans le cadre d'un projet/exposé sur l'apprentissage de Vi dans les systèmes
+                Unix. L'année scolaire de ce projet est 2017-2018, lors de la Licence L3 d'informatique générale au
+                CNAM de Lille, dans le cadre du module NSY103 (Architecure Systèmes & Linux).<br>
+                <br>
+                Author: Jules Lenotte<br>
+                <br>
+            </p>
+        </div>
+    </body>
 </html>
