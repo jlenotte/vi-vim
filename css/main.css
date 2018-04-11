@@ -108,6 +108,13 @@ textarea {
 
 #firstbg {
     width: 100%;
+    float: left;
+    padding-bottom: 30px;
+}
+
+
+#firstbgdiv {
+    width: 1920px;
 }
 
 
@@ -128,10 +135,28 @@ textarea {
     padding-bottom: 30px;
 }
 
+#vimkb {
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#vimkb:hover {
+    width: 150%;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease;
+}
+
 
 h1 {
     color: #122844;
-    font-size: 16pt;
+    font-size: 18pt;
     padding-left: 18%;
     padding-right: 50%;
     float: left;
@@ -246,6 +271,40 @@ h1 {
 
 code {
     background-color: #eeeeee;
+}
+
+
+table.tableizer-table {
+    font-size: 12px;
+    border: 1px solid #CCC;
+    border-collapse: collapse;
+    font-family: Georgia, serif;
+}
+.tableizer-table td {
+    padding: 4px;
+    margin: 3px;
+    border: 1px solid #CCC;
+}
+.tableizer-table th {
+    background-color: #D2D2D2;
+    color: black;
+    font-weight: bold;
+}
+
+
+.spantitles {
+    font-size: 13pt;
+    font-family: Lato, Arial, sans-serif;
+    color: #122844;
+}
+
+
+
+#hurrylist {
+    font-family: Lato, Arial, sans-serif;
+    font-size: 10pt;
+    color: #122844;
+    float: left;
 }
 
 
