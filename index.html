@@ -528,7 +528,37 @@
             ce texte avec une commande put à
             n'importe quel moment de votre session de montage. <br>
             <br>
-
+            <br>
+            <span class="spantitles">Récupération des suppressions</span> <br>
+            <br>
+            Pouvoir supprimer de gros blocs de texte dans une seule édition est très bien, mais que faire si
+            vous supprimez par erreur 53 lignes dont vous avez besoin ? Vous pouvez récupérer n'importe
+            laquelle de vos neuf suppressions passées, car elles sont sauvegardées dans des tampons numérotés.
+            La dernière suppression est sauvegardée dans buffer 1, l'avant-dernière dans le buffer 2, et ainsi
+            de suite. Pour récupérer une suppression, tapez " (guillemets doubles), identifiez le texte mis en
+            mémoire tampon par numéro, puis donnez la commande put. Pour récupérer votre avant-dernière
+            suppression de la mémoire tampon 2, tapez : <br>
+            <br>
+            <code>"2p</code> <br>
+            <br>
+            La suppression dans la mémoire tampon 2 est placée après le curseur. Si vous n'êtes pas sûr quel
+            tampon contient la suppression que vous voulez restaurer, vous n'avez pas besoin de taper <code>"np</code>
+            encore et encore. Si vous utilisez la commande repeat (.) avec <code>p</code> après <code>u</code>,
+            elle incrémente
+            automatiquement le numéro de tampon. Par conséquent, vous pouvez effectuer une recherche dans les
+            tampons numérotés à l'aide de : <br>
+            <br>
+            <code>"1pu.u.u.u</code> <i>etc</i> <br>
+            <br>
+            pour mettre le contenu de chaque tampon suivant dans le fichier l'un après l'autre. Chaque fois
+            que vous tapez <code>u</code>, le texte restauré est supprimé ; lorsque vous tapez un point (<code>.</code>), le contenu du
+            tampon suivant est restauré dans votre fichier. Continuez à taper <code>u</code> et <code>.</code> jusqu'à ce que vous ayez
+            récupéré le texte que vous cherchez. <br>
+            <br>
+            <br>
+            <span class="spantitles">Récupération des suppressions</span> <br>
+            <br>
+            
 
         </p>
     </div>
