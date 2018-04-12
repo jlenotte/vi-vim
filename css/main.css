@@ -113,11 +113,6 @@ textarea {
 }
 
 
-#firstbgdiv {
-    width: 1920px;
-}
-
-
 .titles {
     color: #122844;
     padding-left: 5pt;
@@ -133,24 +128,6 @@ textarea {
     float: left;
     padding-top: 40px;
     padding-bottom: 30px;
-}
-
-#vimkb {
-    width: 100%;
-    float: left;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-#vimkb:hover {
-    width: 150%;
-    float: left;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -ms-transition: all 1s ease; transition: all 1s ease;
 }
 
 
